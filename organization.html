@@ -1,0 +1,136 @@
+<html>
+  <head>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['timeline']});
+      google.charts.setOnLoadCallback(drawChart1);
+      google.charts.setOnLoadCallback(drawChart2);
+      function drawChart1() {
+        var container = document.getElementById('timeline1');
+        var chart = new google.visualization.Timeline(container);
+        var dataTable = new google.visualization.DataTable();
+
+        dataTable.addColumn({ type: 'string', id: 'President' });
+        dataTable.addColumn({ type: 'string', id: 'task' });
+        dataTable.addColumn({ type: 'date', id: 'Start' });
+        dataTable.addColumn({ type: 'date', id: 'End' });
+        dataTable.addRows([
+          [ 'K50+264~K51+171', '2018/09/15 - 2018/09/21', new Date(2018, 09, 15), new Date(2018, 09, 18) ],
+          [ 'K53+202~K53+909', '2018/09/20 - 2018/10/05', new Date(2018, 09, 18), new Date(2018, 09, 20) ],
+          [ 'K53+909~K54+585', '2018/10/04 - 2018/10/24', new Date(2018, 09, 20), new Date(2018, 09, 24) ],
+          [ 'K54+585~K54+774', '2018/10/23 - 2018/11/28', new Date(2018, 09, 24), new Date(2018, 09, 25) ],
+          [ 'K55+995~K58+758', '2018/11/27 - 2018/12/26', new Date(2018, 09, 25), new Date(2018, 10, 04) ],
+          [ 'K84+230~K85+339', '2018/12/24 - 2019/01/22', new Date(2018, 10, 04), new Date(2018, 10, 09) ],
+					[ 'K88+565~K88+690', '2019/01/20 - 2019/02/28', new Date(2018, 10, 09), new Date(2018, 10, 10) ],
+					[ 'K78+979~K83+438', '2019/01/20 - 2019/02/28', new Date(2018, 10, 10), new Date(2018, 10, 25) ],
+					[ 'K83+438~K84+230', '2019/01/20 - 2019/02/28', new Date(2018, 10, 25), new Date(2018, 10, 29) ],
+					[ 'K92+828~K93+593', '2019/01/20 - 2019/02/28', new Date(2018, 10, 29), new Date(2018, 10, 31) ],
+					[ 'K93+593~K94+560', '2019/01/20 - 2019/02/28', new Date(2018, 10, 31), new Date(2018, 11, 02) ],
+					[ 'K94+560~K95+056', '2019/01/20 - 2019/02/28', new Date(2018, 11, 02), new Date(2018, 11, 05) ],
+					[ 'K58+758~K59+615', '2019/01/20 - 2019/02/28', new Date(2018, 11, 05), new Date(2018, 11, 07) ],
+					[ 'K59+615~K63+859', '2019/01/20 - 2019/02/28', new Date(2018, 11, 07), new Date(2018, 11, 22) ],
+					[ 'K64+171~K68+534', '2019/01/20 - 2019/02/28', new Date(2018, 11, 22), new Date(2018, 12, 07) ],
+					[ 'K70+259~K70+754', '2019/01/20 - 2019/02/28', new Date(2018, 12, 07), new Date(2018, 12, 10) ],
+					[ 'K71+474~K74+535', '2019/01/20 - 2019/02/28', new Date(2018, 12, 10), new Date(2018, 12, 20) ],
+					[ 'K95+056~K95+751', '2019/01/20 - 2019/02/28', new Date(2018, 12, 20), new Date(2018, 12, 24) ],
+					[ 'K95+751~K97+080', '2019/01/20 - 2019/02/28', new Date(2018, 12, 24), new Date(2018, 12, 27) ],
+					[ 'K97+080~K101+600', '2019/01/20 - 2019/02/28', new Date(2018, 12, 27), new Date(2019, 01, 29) ],
+					[ 'K101+600~K101+952', '2019/01/20 - 2019/02/28', new Date(2019, 01, 29), new Date(2019, 01, 31) ],
+					[ 'K105+596~K106+738', '2019/01/20 - 2019/02/28', new Date(2019, 01, 31), new Date(2019, 02, 08) ],
+					[ 'K107+274~K110+400', '2019/01/20 - 2019/02/28', new Date(2019, 02, 08), new Date(2019, 03, 04) ],
+          ]);
+
+    var options = {
+      timeline: { showRowLabels: true },
+      timeline: { colorByRowLabel: true }
+    };
+
+
+        chart.draw(dataTable, options);
+      }
+
+function drawChart2() {
+        var container = document.getElementById('timeline2');
+        var chart = new google.visualization.Timeline(container);
+        var dataTable = new google.visualization.DataTable();
+
+        dataTable.addColumn({ type: 'string', id: 'President' });
+        dataTable.addColumn({ type: 'string', id: 'task' });
+        dataTable.addColumn({ type: 'date', id: 'Start' });
+        dataTable.addColumn({ type: 'date', id: 'End' });
+        dataTable.addRows([
+          [ '第一阶段（K120+500—K121+500)', '2018/09/15 - 2018/09/21', new Date(2018, 08, 15), new Date(2018, 08, 21) ],
+          [ '第二阶段（K118+700—K120+500)', '2018/09/20 - 2018/10/05', new Date(2018, 08, 20), new Date(2018, 09, 5) ],
+          [ '第三阶段（K115+500—K118+700)', '2018/10/04 - 2018/10/24', new Date(2018, 09, 4), new Date(2018, 09, 24) ],
+          [ '第四阶段（K110+400—K115+500)', '2018/10/23 - 2018/11/28', new Date(2018, 09, 23), new Date(2018, 10, 28) ],
+          [ '第五阶段（K121+500—K125+500)', '2018/11/27 - 2018/12/26', new Date(2018, 10, 27), new Date(2018, 11, 26) ],
+          [ '第六阶段（K125+500—K129+500)', '2018/12/24 - 2019/01/22', new Date(2018, 11, 24), new Date(2018, 12, 22) ],
+          [ '第七阶段（K129+500—K135+200)', '2019/01/20 - 2019/02/28', new Date(2018, 12, 20), new Date(2019, 01, 28) ],
+          ]);
+
+    var options = {
+      timeline: { showRowLabels: true },
+      timeline: { colorByRowLabel: true }
+    };
+
+
+        chart.draw(dataTable, options);
+      }
+
+
+
+
+
+
+    </script>
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-primary bg-primary  border border-bottom border border-white">
+            <div class="container">
+              <a class="navbar-brand text-white" href="index.html">Proyecto Ruta 32, Limón - 32号公路项目</a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse " id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white" href="pagina2.html">桥梁 (Puentes)
+                          <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+                  <li class="nav-item ">
+                    <a class="nav-link text-white" href="tramo1.html">Tramo1</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="organization.html">水管迁移计划</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-white" href="#">联系</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+    <div class="container mt-3">
+        <h5 class="ml-3 mb-3">二分部AYA水管迁移需求计划 - PLAN DE REQUERIMIENTOS RAMA II MIGRACION DE TUBERIA DEL AYA</h5>
+        <div class="container" id="timeline2" style="height: 350px; width: 100%"></div>
+    </div>
+    <div class="container">
+        <a class="ml-3" href="https://drive.google.com/open?id=1DOUnH-Q4tejXVjlwVPB3WGZ7FwWckIpG">Fichero Original de Project</a>
+
+    </div>
+    <div class="container mt-3">
+            <h5 class="ml-3 mb-3">一分部AYA水管迁移需求计划 - PLAN DE REQUERIMIENTOS RAMA I MIGRACION DE TUBERIA DEL AYA</h5>
+            <div class="container" id="timeline1" style="height: 350px; width: 100%"></div>
+        </div>
+        <div class="container">
+            <a class="ml-3" href="https://drive.google.com/open?id=1DOUnH-Q4tejXVjlwVPB3WGZ7FwWckIpG">Fichero Original de Project</a>
+    
+        </div>
+
+        
+  </body>
+</html>

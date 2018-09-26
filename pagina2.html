@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!---<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">-->
+ <!-- Bootstrap core CSS -->
+ <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+ <!-- Custom styles for this template -->
+ <link href="css/full-slider.css" rel="stylesheet">
+
+ <title>Coordinación CHEC - ICE (Proyecto Ruta 32)</title>
+
+</head>
+
+<body>
+  
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-primary bg-primary border border-bottom border border-white">
+        <div class="container">
+          <a class="navbar-brand text-white" href="index.html">Proyecto Ruta 32, Limón - 32号公路项目</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="pagina2.html">桥梁 (Puentes)
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-white" href="tramo1.html">Tramo1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="organization.html">水管迁移计划</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">联系</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+<div class="container">
+
+  <h3>Listado de Puentes</h3>
+
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col"># （编号）</th>
+            <th scope="col">Nombre Puente (桥梁名称)</th>
+            <th scope="col">Estación Inicial （桩号）</th>
+            <th scope="col">Coordenadas （坐标）</th>
+            <th scope="col">Ir al Mapa （看地图）</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Puente  Río Corinto (LD)</td>
+            <td>50,975.80</td>
+            <td>10.211624, -83.885874</td>
+            <td>  
+              
+                <button type="button" class="btn btn-primary" data-toggle="modal" 
+                  data-target="#myModal" data-lat='10.211624' data-lng='-83.885874'>
+                    Ver Mapa （地图）
+                </button>
+
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Puente  Río Costa Rica</td>
+            <td>54,088.30</td>
+            <td>10.212876, -83.859713</td>
+            <td>
+              
+                <button type="button" class="btn btn-primary" data-toggle="modal" 
+                  data-target="#myModal" data-lat='10.212876' data-lng='-83.859713'>
+                    Ver Mapa （地图）
+                </button>
+
+            </td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Puente  Río Blanco (LD)</td>
+            <td>56,187.60</td>
+            <td>10.212665, -83.840496</td>
+            <td>
+              
+                <button type="button" class="btn btn-primary" data-toggle="modal" 
+                  data-target="#myModal" data-lat='10.212665' data-lng='-83.840496'>
+                    Ver Mapa （地图）
+                </button>
+
+            </td>
+          </tr>
+          <tr>
+              <th scope="row">4</th>
+              <td>Puente  Río Danta (LD)</td>
+              <td>57,334.70</td>
+              <td>10.208157, -83.831460</td>
+              <td>
+                
+                  <button type="button" class="btn btn-primary" data-toggle="modal" 
+                    data-target="#myModal" data-lat='10.208157' data-lng='-83.831460'>
+                      Ver Mapa （地图）
+                  </button>
+  
+              </td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                <td>Puente  Río Toro Amarillo (LD)</td>
+                <td>59,129.70</td>
+                <td>10.203261, -83.816550</td>
+                <td>
+                  
+                    <button type="button" class="btn btn-primary" data-toggle="modal" 
+                      data-target="#myModal" data-lat='10.203261' data-lng='-83.816550'>
+                        Ver Mapa （地图）
+                    </button>
+    
+                </td>
+              </tr>
+              <tr>
+                  <th scope="row">6</th>
+                  <td>Puente Río Molinos (LD)</td>
+                  <td>64,884.60</td>
+                  <td>10.203950, -83.763530</td>
+                  <td>
+                    
+                      <button type="button" class="btn btn-primary" data-toggle="modal" 
+                        data-target="#myModal" data-lat='10.203950' data-lng='-83.763530'>
+                          Ver Mapa （地图）
+                      </button>
+      
+                  </td>
+                </tr>
+                <tr>
+                    <th scope="row">7</th>
+                    <td>Puente Río Jiménez (LD)</td>
+                    <td>67,336.80</td>
+                    <td>10.205210, -83.741350</td>
+                    <td>
+                      
+                        <button type="button" class="btn btn-primary" data-toggle="modal" 
+                          data-target="#myModal" data-lat='10.205210' data-lng='-83.741350'>
+                            Ver Mapa （地图）
+                        </button>
+        
+                    </td>
+                  </tr>
+                  <tr>
+                      <th scope="row">8</th>
+                      <td>Puente Río Roca (LD)</td>
+                      <td>67,508.60</td>
+                      <td>10.205330, -83.739660</td>
+                      <td>
+                        
+                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                            data-target="#myModal" data-lat='10.205330' data-lng='-83.739660'>
+                              Ver Mapa （地图）
+                          </button>
+          
+                      </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">9</th>
+                        <td>Puente Río Guácimo (LD)</td>
+                        <td>73,755.60</td>
+                        <td>10.205660, -83.683990</td>
+                        <td>
+                          
+                            <button type="button" class="btn btn-primary" data-toggle="modal" 
+                              data-target="#myModal" data-lat='10.205660' data-lng='-83.683990'>
+                                Ver Mapa （地图）
+                            </button>
+            
+                        </td>
+                      </tr>
+                      <tr>
+                          <th scope="row">10</th>
+                          <td>Puente Río Guacimito (LD)</td>
+                          <td>74,049.90</td>
+                          <td>10.204350, -83.681570</td>
+                          <td>
+                            
+                              <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                data-target="#myModal" data-lat='10.204350' data-lng='-83.681570'>
+                                  Ver Mapa （地图）
+                              </button>
+              
+                          </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">11</th>
+                            <td>Puente Río Parismina (LD)</td>
+                            <td>78,187.80</td>
+                            <td>10.195160, -83.645170</td>
+                            <td>
+                              
+                                <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                  data-target="#myModal" data-lat='10.195160' data-lng='-83.645170'>
+                                    Ver Mapa （地图）
+                                </button>
+                
+                            </td>
+                          </tr>
+
+                          <tr>
+                              <th scope="row">12</th>
+                              <td>Puente Río Dos Novillos (LD)</td>
+                              <td>83,035.30</td>
+                              <td>10.170840, -83.608220</td>
+                              <td>
+                                
+                                  <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                    data-target="#myModal" data-lat='10.170840' data-lng='-83.608220'>
+                                      Ver Mapa （地图）
+                                  </button>
+                  
+                              </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">13</th>
+                                <td>Puente Río Destierro (LD)</td>
+                                <td>84,269.70</td>
+                                <td>10.162590, -83.600940</td>
+                                <td>
+                                  
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                      data-target="#myModal" data-lat='10.162590' data-lng='-83.600940'>
+                                        Ver Mapa （地图）
+                                    </button>
+                    
+                                </td>
+                              </tr>
+
+                              <tr>
+                                  <th scope="row">14</th>
+                                  <td>Puente Río Dos Vueltas (LD)</td>
+                                  <td>89,283.00</td>
+                                  <td>10.136429, -83.564409</td>
+                                  <td>
+                                    
+                                      <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                        data-target="#myModal" data-lat='10.136429' data-lng='-83.564409'>
+                                          Ver Mapa （地图）
+                                      </button>
+                      
+                                  </td>
+                                </tr>
+                               
+                                <tr>
+                                    <th scope="row">15</th>
+                                    <td>Puente Paso Superior Ferrocarril (LD)</td>
+                                    <td>94,023.20</td>
+                                    <td>10.112650, -83.538860</td>
+                                    <td>
+                                      
+                                        <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                          data-target="#myModal" data-lat='10.112650' data-lng='-83.538860'>
+                                            Ver Mapa （地图）
+                                        </button>
+                        
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">16</th>
+                                      <td>Puente Río Reventazón (LD)</td>
+                                      <td>94,288.30</td>
+                                      <td>10.106480, -83.531490</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='10.106480' data-lng='-83.531490'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">17</th>
+                                      <td>Puente Río Siquirres (LD)</td>
+                                      <td>97,118.30</td>
+                                      <td>10.093910, -83.508990</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='10.093910' data-lng='-83.508990'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">18</th>
+                                      <td>Puente Río Pacuare (LD)</td>
+                                      <td>99,668.20</td>
+                                      <td>10.092480, -83.487700</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='10.092480' data-lng='-83.487700'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">19</th>
+                                      <td>Puente Río Pacuarito (LD)</td>
+                                      <td>101,586.00</td>
+                                      <td>10.101280, -83.471980</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='10.101280' data-lng='-83.471980'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">20</th>
+                                      <td>Puente Río Cimarrones (LD)</td>
+                                      <td>106,552.80</td>
+                                      <td>10.097250, -83.427270</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='10.097250' data-lng='-83.427270'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">21</th>
+                                      <td>Puente Río Hondo (LD)</td>
+                                      <td>107,814.90</td>
+                                      <td>10.095010, -83.418650</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='10.095010' data-lng='-83.418650'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">22</th>
+                                      <td>Puente Río Madre de Dios (LD)</td>
+                                      <td>109,666.50</td>
+                                      <td>10.077240, -83.411870</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='10.077240' data-lng='-83.411870'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">23</th>
+                                      <td>Puente Río Barbilla (LD)</td>
+                                      <td>115,506.30</td>
+                                      <td>10.065170, -83.366890</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='10.065170' data-lng='-83.366890'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">24</th>
+                                      <td>Puente Río Quebrada Calderón (LD)</td>
+                                      <td>120,615.50</td>
+                                      <td>10.046820, -83.334170</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='10.046820' data-lng='-83.334170'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">25</th>
+                                      <td>Puente Río Aguas Claras (LD)</td>
+                                      <td>121,469.06</td>
+                                      <td>10.046610, -83.325870</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='10.046610' data-lng='-83.325870'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">26</th>
+                                      <td>Puente Río San Miguel (LD)</td>
+                                      <td>123,459.00</td>
+                                      <td>10.046050, -83.307630</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='10.046050' data-lng='-83.307630'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">27</th>
+                                      <td>Puente Río Chirripó (LD)</td>
+                                      <td>125,309.60</td>
+                                      <td>10.045190, -83.289730</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='10.045190' data-lng='-83.289730'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">28</th>
+                                      <td>Puente Río Escondido (LD)</td>
+                                      <td>133,112.50</td>
+                                      <td>10.022400, -83.218320</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='10.022400' data-lng='-83.218320'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">29</th>
+                                      <td>Puente Río Cuba (LD)</td>
+                                      <td>133,950.50</td>
+                                      <td>10.016610, -83.209700</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='10.016610' data-lng='-83.209700'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">30</th>
+                                      <td>Puente Río Rojo (LD)</td>
+                                      <td>134,857.50</td>
+                                      <td>10.011500, -83.202080</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='10.011500' data-lng='-83.202080'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr> 
+                                  <tr>
+                                      <th scope="row">31</th>
+                                      <td>Puente Río Toro (LD)</td>
+                                      <td>135,075.50</td>
+                                      <td>10.010520, -83.200650</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='10.010520' data-lng=' -83.200650'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">32</th>
+                                      <td>Puente Río Madre (LD)</td>
+                                      <td>141,278.00</td>
+                                      <td>9.993280, -83.149420</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='9.993280' data-lng='-83.149420'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">33</th>
+                                      <td>Puente Río Blanco (LD)</td>
+                                      <td>145,145.00</td>
+                                      <td>9.991800, -83.125120</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='9.991800' data-lng='-83.125120'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr>
+                                  <tr>
+                                      <th scope="row">33</th>
+                                      <td>Regulador</td>
+                                      <td>NI</td>
+                                      <td>10.2001, -83.6722</td>
+                                      <td>
+                                        
+                                          <button type="button" class="btn btn-primary" data-toggle="modal" 
+                                            data-target="#myModal" data-lat='10.2001' data-lng='-83.6722'>
+                                              Ver Mapa （地图）
+                                          </button>
+                          
+                                      </td>
+                                  </tr>
+                                 
+                                  
+                              
+        </tbody>
+      </table>
+
+</div>
+
+  
+
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+            <h4 class="modal-title" id="myModalLabel"></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+         
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-md-12 modal_body_content">
+              <p></p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 modal_body_map">
+              <div class="location-map" id="location-map">
+                <div style="width: 600px; height: 400px;" id="map_canvas"></div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 modal_body_end">
+              <p></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="//maps.googleapis.com/maps/api/js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

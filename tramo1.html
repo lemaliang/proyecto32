@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!---<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">-->
+ <!-- Bootstrap core CSS -->
+ <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+ <!-- Custom styles for this template -->
+ <link href="css/full-slider.css" rel="stylesheet">
+
+ <title>Coordinación CHEC - ICE (Proyecto Ruta 32)</title>
+
+</head>
+
+<body>
+  
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-primary bg-primary  border border-bottom border border-white">
+        <div class="container">
+          <a class="navbar-brand text-white" href="index.html">Proyecto Ruta 32, Limón - 32号公路项目</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="pagina2.html">桥梁 (Puentes)
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link text-white" href="tramo1.html">Tramo1</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="organization.html"">水管迁移计划</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">联系</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+<div class="container">
+
+       
+
+        <table class="table table-sm">
+                <thead>
+                  <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Tramo</th>
+                    <th scope="col">Estación</th>
+                    <th scope="col">Plano</th>
+                  </tr>
+                </thead>
+                <tbody>
+
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Tramo I</td>
+                    <td>49+000 - 49+800</td>
+                    <td>
+                            <a href="#" id="pop">
+                                    <img id="imageresource" src="/img/49+000-49+800.jpg" style="width: 100px; height: 80px;">
+                            </a>
+                    </td>
+                  </tr>
+                  <tr>
+                        <th scope="row">2</th>
+                        <td>Tramo I</td>
+                        <td>49+800-50+600</td>
+                        <td>
+                                <a href="#" id="pop">
+                                        <img id="imageresource" src="/img/49+800-50+600.jpg" style="width: 100px; height: 80px;">
+                                </a>
+                        </td>
+                  </tr>
+                  
+                </tbody>
+              </table>
+
+            <!-- Creates the bootstrap modal where the image will appear -->
+            <div class="modal fade bd-example-modal-lg" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Image preview</h4>
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    
+                  </div>
+                  <div class="modal-body">
+                    <img src="" id="imagepreview" style="width: 770px; height: 450px;" >
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+        
+
+</div>
+
+
+  
+
+  
+
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="//maps.googleapis.com/maps/api/js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
